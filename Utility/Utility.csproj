@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp3.1\Utility.AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Debug\netcoreapp3.1\Utility.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\Utility.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\Debug\netcoreapp3.1\Utility.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Utility.assets.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Utility.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp3.1\Utility.dll" />
+    <None Include="obj\Debug\netcoreapp3.1\Utility.pdb" />
+    <None Include="obj\Utility.csproj.nuget.cache" />
+    <None Include="obj\Utility.csproj.nuget.g.props" />
+    <None Include="obj\Utility.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="3.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>

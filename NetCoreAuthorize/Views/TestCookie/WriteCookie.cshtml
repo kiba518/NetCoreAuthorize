@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "WriteCookie";
+} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    
+</head>
+<body>
+    <h1>WriteCookie</h1>
+    <p id="cookie"></p>
+    <div>
+        <script>
+            function getCookie(cname) {
+                alert(cname);
+                var name = cname + "=";
+                alert(name);
+                var ca = document.cookie.split(';');
+                alert(ca.length);
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i].trim();
+                      alert(c);
+                    if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+                }
+               
+                return "";
+            }
+            var x = getCookie("kiba");
+            document.getElementById("cookie").innerHTML = x;</script>
+    </div>
+</body>
+</html>
